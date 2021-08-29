@@ -2,9 +2,6 @@ import 'core-js/stable'
 import 'regenerator-runtime/runtime'
 import { registerHtml, start, useEffect } from 'tram-one'
 import AppHeader from './app-header'
-import AppSummary from './app-summary'
-import appTaskDescription from './app-task-description'
-import AppTaskList from './app-task-list'
 import './styles.css'
 
 /**
@@ -14,9 +11,6 @@ import './styles.css'
 
 const html = registerHtml({
 	'app-header': AppHeader,
-	'app-summary': AppSummary,
-	'app-task-list': AppTaskList,
-	'app-task-description': appTaskDescription,
 })
 
 const home = () => {
@@ -25,11 +19,7 @@ const home = () => {
 	})
 	return html`
 		<main>
-			<app-header>dibs checklist</app-header>
-			<app-summary />
-			<app-task-list />
-			<hr />
-			<app-task-description />
+			<app-header />
 		</main>
 	`
 }
