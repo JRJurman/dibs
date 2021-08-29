@@ -4,8 +4,8 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<h1 class="app-header">
+		<div class="dib-row">
 			${children}
-		</h1>
+		</div>
 	`
 }
