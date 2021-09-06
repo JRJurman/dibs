@@ -1,19 +1,19 @@
 import { registerHtml, useEffect } from 'tram-one'
 import AppHeader from '../components/app-header'
-import NameInput from '../components/name-input';
-import DibsInput from '../components/dibs-input';
-import CallDibsButton from '../components/call-dibs-button';
+import DibDisplay from '../components/dib-display';
+import NewDibButton from '../components/new-dib-button';
+import CopyLinkButton from '../components/copy-link-button';
 import AllDibsButton from '../components/all-dibs-button';
 
 /**
- * The landing page for each new dib page
+ * The results for a dib
  */
 
 const html = registerHtml({
 	'app-header': AppHeader,
-	'name-input': NameInput,
-	'dibs-input': DibsInput,
-	'call-dibs-button': CallDibsButton,
+	'dib-display': DibDisplay,
+	'new-dib-button': NewDibButton,
+	'copy-link-button': CopyLinkButton,
 	'all-dibs-button': AllDibsButton,
 })
 
@@ -21,9 +21,9 @@ export default () => {
 	return html`
 		<main>
 			<app-header />
-			<name-input />
-			<dibs-input />
-			<call-dibs-button />
+			<dib-display />
+			<copy-link-button />
+			<new-dib-button />
 			<all-dibs-button />
 		</main>
 	`

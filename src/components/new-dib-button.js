@@ -4,8 +4,6 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<div class="new-dib-button">
-			${children}
-		</div>
+		<a href="/" class="new-dib-button">Call something else</a>
 	`
 }

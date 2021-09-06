@@ -4,8 +4,8 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<h1 class="dib-display">
-			${children}
-		</h1>
+		<section class="dib-display">
+			This is a placeholder for a dib result
+		</section>
 	`
 }

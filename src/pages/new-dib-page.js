@@ -1,8 +1,6 @@
 import { registerHtml, useEffect } from 'tram-one'
 import AppHeader from '../components/app-header'
-import NameInput from '../components/name-input';
-import DibsInput from '../components/dibs-input';
-import CallDibsButton from '../components/call-dibs-button';
+import NewDibForm from '../components/new-dib-form';
 import AllDibsButton from '../components/all-dibs-button';
 
 /**
@@ -11,9 +9,7 @@ import AllDibsButton from '../components/all-dibs-button';
 
 const html = registerHtml({
 	'app-header': AppHeader,
-	'name-input': NameInput,
-	'dibs-input': DibsInput,
-	'call-dibs-button': CallDibsButton,
+	'new-dib-form': NewDibForm,
 	'all-dibs-button': AllDibsButton,
 })
 
@@ -21,9 +17,7 @@ export default () => {
 	return html`
 		<main>
 			<app-header />
-			<name-input />
-			<dibs-input />
-			<call-dibs-button />
+			<new-dib-form />
 			<all-dibs-button />
 		</main>
 	`

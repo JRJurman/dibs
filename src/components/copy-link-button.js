@@ -4,8 +4,8 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<h1 class="copy-link-button">
-			${children}
-		</h1>
+		<div class="copy-link-button">
+			<button>Copy Dib Link</button>
+		</div>
 	`
 }

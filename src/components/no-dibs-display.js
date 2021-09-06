@@ -4,8 +4,8 @@ const html = registerHtml()
 
 export default (props, children) => {
 	return html`
-		<div class="no-dibs-display">
-			${children}
-		</div>
+		<span class="no-dibs-display">
+			Couldn't find any calls
+		</span>
 	`
 }
